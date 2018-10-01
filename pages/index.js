@@ -1,11 +1,17 @@
-import Link from 'next/link';
+import Navbar from '../components/Navbar';
 
 const Index = () => (
 	<section>
+		<Navbar />
 		<h1>Hello world</h1>
-		<Link href="/about">
-			<a title="About NextJS">About</a>
-		</Link>
+		<style jsx global>{`
+			a {
+				padding: 10px;
+				text-decoration: none;
+				color: green;
+			}
+		`}
+		</style>
 	</section>
 );
 
